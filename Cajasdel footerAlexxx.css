@@ -1,0 +1,167 @@
+* {
+  font-family: oswald;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #C1848c;
+  --color: #212325;
+  --color-2: #444;
+  --color-3: #666;
+  --transition: all 0.25s ease 0s;
+}
+
+html {
+  font-size: 18px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+  font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  html {
+  font-size: 16px;
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+.logo {
+  position: relative;
+  top: 30%;
+  left: 0%;
+  border-inline:  3px solid;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.copyright {
+  padding: 0rem ;
+  font-size: large;
+  font-weight: 400s;
+  color: var(--color-0);
+  border-bottom: 2px solid;
+
+  text-align: center;
+}
+
+.footer-nav {
+  padding: 0.5rem 0;
+  border-top: 2px solid;
+}
+
+.footer-nav .col {
+  max-width: 250px;
+  writing-mode: horizontal-tb;
+  border-inline:  2px solid;
+  align-items: center;
+  line-height: 25px;
+  font-size: large;
+}
+
+p.site-decription {
+  color: var(--color-0);
+  font-size: large;
+  align-items: center;
+  font-weight: 200; 
+  height: 100px;
+  width: 180px;
+
+}
+
+.social-medias a {
+  color: var(--color-0);
+  width:  2rem;
+  height: 2rem;
+  border-radius: 50%;
+
+}
+
+.social-medias svg {
+  vertical-align: center;
+  width: 2em;
+  height: 2rem;
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-jc-start {
+  justify-content: flex-start;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-g-1 {
+  gap: 1rem;
+}
+
+.col {
+  flex: 1;
+}
+
+.col-list ul li {
+  list-style: none;
+}
+.col-list ul li a {
+  text-decoration: none;
+  color: var(--color-0);
+  transition: var(--transition);
+
+}
+
+.col-list ul li a:hover,
+.col-list ul li a:focus {
+  color: var(--color);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-nav {
+  flex-direction: column;
+  }
+.col-title {
+  align-items: revert;
+}
+
+  
+
+
